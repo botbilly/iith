@@ -1,126 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Bot Billy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<title>Command Center</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        body {
-            background: linear-gradient(135deg, #111827, #1f2937);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
+<style>
+    body {
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
 
-        .glass {
-            background: rgba(255,255,255,0.06);
-            backdrop-filter: blur(18px);
-            border: 1px solid rgba(255,255,255,0.08);
-        }
+    .glass {
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255,255,255,0.08);
+    }
 
-        .card-hover {
-            transition: all 0.25s ease;
-        }
+    .card {
+        transition: all 0.25s ease;
+    }
 
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-            background: rgba(255,255,255,0.1);
-        }
-    </style>
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+        background: rgba(255,255,255,0.08);
+    }
+</style>
 </head>
 
 <body class="min-h-screen text-gray-200">
 
-    <div class="max-w-6xl mx-auto px-6 py-12">
+<div class="max-w-7xl mx-auto px-6 py-12">
 
-        <!-- HEADER -->
-        <header class="text-center mb-16">
-            <div class="flex justify-center mb-6">
-                <img src="image_github.jpg"
-                     class="w-32 h-32 rounded-full border-4 border-gray-700 shadow-xl object-cover">
+<!-- HEADER -->
+<header class="text-center mb-16">
+    <h1 class="text-4xl font-bold tracking-tight">My Space</h1>
+    <p class="text-gray-400 mt-2 uppercase tracking-widest text-sm">
+        Multi Skill Assistant
+    </p>
+</header>
+
+
+<!-- ================= 1️⃣ JOB (FIRST PRIORITY) ================= -->
+<section class="mb-16">
+    <h2 class="text-2xl font-semibold mb-6 text-blue-400">1. Professional Work (Primary)</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="glass p-6 rounded-2xl">
+            <h3 class="font-semibold mb-4 text-gray-300">Registers</h3>
+            <div class="space-y-3">
+                <a href="#" class="block p-3 rounded-xl glass card text-center">Outward Bill Register</a>
+                <a href="#" class="block p-3 rounded-xl glass card text-center">Inward Bill Register</a>
+                <a href="#" class="block p-3 rounded-xl glass card text-center">Leave Register</a>
             </div>
-            <h1 class="text-4xl font-bold tracking-tight">My Workspace</h1>
-            <p class="text-gray-400 mt-2 text-sm uppercase tracking-widest">
-                Personal Control Center
-            </p>
-        </header>
-
-        <!-- GRID -->
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-
-            <!-- BILL REGISTERS -->
-            <section class="glass rounded-2xl p-6">
-                <h2 class="text-lg font-semibold mb-5 text-blue-400">Bill Registers</h2>
-                <div class="space-y-3">
-                    <a href="#" target="_blank"
-                       class="block p-4 rounded-xl glass card-hover">
-                        CC Outward Register
-                    </a>
-                    <a href="#" target="_blank"
-                       class="block p-4 rounded-xl glass card-hover">
-                        CC Inward Register
-                    </a>
-                </div>
-            </section>
-
-            <!-- BUDGET -->
-            <section class="glass rounded-2xl p-6">
-                <h2 class="text-lg font-semibold mb-5 text-green-400">Budget Tracking</h2>
-                <div class="space-y-3">
-                    <a href="#" target="_blank"
-                       class="block p-4 rounded-xl glass card-hover">
-                        FY 2025-26
-                    </a>
-                    <a href="#" target="_blank"
-                       class="block p-4 rounded-xl glass card-hover">
-                        FY 2024-25 (Archive)
-                    </a>
-                </div>
-            </section>
-
-            <!-- LEAVE REGISTERS -->
-            <section class="glass rounded-2xl p-6">
-                <h2 class="text-lg font-semibold mb-5 text-purple-400">Leave Registers</h2>
-                <div class="space-y-3">
-                    <a href="#" target="_blank"
-                       class="block p-4 rounded-xl glass card-hover">
-                        Staff Leave Register
-                    </a>
-                    <a href="#" target="_blank"
-                       class="block p-4 rounded-xl glass card-hover">
-                        Support Staff Register
-                    </a>
-                </div>
-            </section>
-
-            <!-- QUICK ACCESS -->
-            <section class="glass rounded-2xl p-6 md:col-span-2 xl:col-span-3">
-                <h2 class="text-lg font-semibold mb-6 text-indigo-400">Quick Access</h2>
-
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                    <a href="#" class="p-4 rounded-xl glass text-center card-hover">IGNOU BCA</a>
-                    <a href="#" class="p-4 rounded-xl glass text-center card-hover">Samarth Login</a>
-                    <a href="#" class="p-4 rounded-xl glass text-center card-hover">Learn Hindi</a>
-                    <a href="#" class="p-4 rounded-xl glass text-center card-hover">Cyber Security</a>
-                    <a href="#" class="p-4 rounded-xl glass text-center card-hover">Daily Expenditure</a>
-                    <a href="#" class="p-4 rounded-xl glass text-center card-hover">Salary Sheet</a>
-                    <a href="#" class="p-4 rounded-xl glass text-center card-hover">Zoho E-Sign</a>
-
-                </div>
-            </section>
-
         </div>
 
-        <!-- FOOTER -->
-        <footer class="mt-16 text-center text-gray-500 text-sm">
-            © 2026 Harsha | Personal Workspace
-        </footer>
+        <div class="glass p-6 rounded-2xl">
+            <h3 class="font-semibold mb-4 text-gray-300">Budget Records</h3>
+            <div class="space-y-3">
+                <a href="#" class="block p-3 rounded-xl glass card text-center">FY 2025-26 Budget</a>
+                <a href="#" class="block p-3 rounded-xl glass card text-center">FY 2024-25 Archive</a>
+            </div>
+        </div>
+
+        <div class="glass p-6 rounded-2xl">
+            <h3 class="font-semibold mb-4 text-gray-300">Administration</h3>
+            <div class="space-y-3">
+                <a href="#" class="block p-3 rounded-xl glass card text-center">Zoho E-Sign</a>
+                <a href="#" class="block p-3 rounded-xl glass card text-center">Official Docs</a>
+            </div>
+        </div>
 
     </div>
+</section>
 
+
+
+<!-- ================= 2️⃣ CORE LEARNING ================= -->
+<section class="mb-16">
+    <h2 class="text-2xl font-semibold mb-6 text-green-400">2. Core Learning</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <a href="#" class="glass p-6 rounded-2xl text-center card">
+            BCA Course
+        </a>
+
+        <a href="#" class="glass p-6 rounded-2xl text-center card">
+            Cybersecurity Learning
+        </a>
+
+        <a href="#" class="glass p-6 rounded-2xl text-center card">
+            Technical Practice
+        </a>
+
+    </div>
+</section>
+
+
+
+<!-- ================= 3️⃣ MISC LEARNING ================= -->
+<section class="mb-16">
+    <h2 class="text-2xl font-semibold mb-6 text-purple-400">3. Miscellaneous Learning</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+        <a href="#" class="glass p-5 rounded-2xl text-center card">
+            Learn Hindi
+        </a>
+
+        <a href="#" class="glass p-5 rounded-2xl text-center card">
+            Reading
+        </a>
+
+        <a href="#" class="glass p-5 rounded-2xl text-center card">
+            General Knowledge
+        </a>
+
+        <a href="#" class="glass p-5 rounded-2xl text-center card">
+            Personal Development
+        </a>
+
+    </div>
+</section>
+
+
+
+<!-- ================= 4️⃣ MONEY TRACKING ================= -->
+<section class="mb-12">
+    <h2 class="text-2xl font-semibold mb-6 text-yellow-400">4. Financial Tracking</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <a href="#" class="glass p-6 rounded-2xl text-center card">
+            Salary Sheet
+        </a>
+
+        <a href="#" class="glass p-6 rounded-2xl text-center card">
+            Daily Expenditure
+        </a>
+
+        <a href="#" class="glass p-6 rounded-2xl text-center card">
+            Savings & Investments
+        </a>
+
+    </div>
+</section>
+
+
+
+<footer class="text-center text-gray-500 text-sm mt-12">
+    Built with Discipline • Version 1.0
+</footer>
+
+</div>
 </body>
 </html>
-
-
